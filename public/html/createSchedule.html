@@ -1,0 +1,24 @@
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Create Your Schedule</div>
+  <div class="panel-body">
+
+    <div class="input-group">
+      <span class="input-group-addon" id="server">Scheduler String</span>
+      <input type="text" class="form-control" placeholder="Server Address e.g. localhost:1521" aria-describedby="server" ng-model="cronSyntax">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon" id="user">Message</span>
+      <input type="text" class="form-control" placeholder="Username e.g. root" aria-describedby="user" ng-model="message">
+    </div>
+    <br>
+
+    <br>
+    <button type="button button-primary" class="btn btn-primary" ng-click="createSchedule()">Create Schedule</button>
+    <br>
+    <p ng-bind="response"></p>
+
+  </div>
+  </div>
+</div>
